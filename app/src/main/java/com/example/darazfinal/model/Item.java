@@ -1,6 +1,7 @@
 package com.example.darazfinal.model;
 
-public class Item { private String productName;
+public class Item {
+    private String productName;
     private String productImage;
     private String price;
 

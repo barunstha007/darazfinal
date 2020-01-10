@@ -74,7 +74,6 @@ public class HomeFragment extends Fragment {
         listCall.enqueue(new Callback<List<Item>>() {
             @Override
             public void onResponse(Call<List<Item>> call, Response<List<Item>> response) {
-
                     if (!response.isSuccessful()) {
                         Toast.makeText(getContext(), "Toast " + response.code(), Toast.LENGTH_SHORT).show();
                         return;
@@ -87,6 +86,7 @@ public class HomeFragment extends Fragment {
                 }
             @Override
             public void onFailure(Call<List<Item>> call, Throwable t) {
+                Toast.makeText(getActivity(), "Error" +t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });

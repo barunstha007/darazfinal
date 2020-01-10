@@ -11,7 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.darazfinal.R;
+import com.example.darazfinal.Url.Url;
 import com.example.darazfinal.model.Item;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -37,7 +39,7 @@ public void onBindViewHolder(@NonNull ItemAdapter.ItemViewHolder holder, int pos
 final Item item=itemList.get(position);
         holder.tvDescription.setText(item.getProductName());
         holder.tvRate.setText(item.getPrice());
-//        holder.imgImage.setImageResource(item.getProductImage());
+        Picasso.get().load(Url.base_url_image+itemList.get(position).getProductImage()).into(holder.imgImage);
         }
 
 @Override
