@@ -16,7 +16,8 @@
     <ImageView
         android:src="@drawable/daraz"
         android:layout_width="match_parent"
-        android:layout_height="150dp"/>
+        android:layout_height="120dp"
+        android:layout_marginVertical="25dp"/>
     <androidx.cardview.widget.CardView
         android:layout_width="260dp"
         android:layout_gravity="center"
@@ -26,27 +27,18 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_margin="10dp"
-                android:text="Mobile Number/Email"
-                android:layout_width="wrap_content"
-                android:textStyle="bold"
-                android:layout_height="wrap_content"/>
+
 
             <EditText
                 android:id="@+id/etNumber"
+                android:hint="Phone Number"
                 android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-            <TextView
-                android:text="Password"
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
-                android:textStyle="bold"
-                android:layout_height="wrap_content"/>
             <EditText
                 android:id="@+id/etPassword"
+                android:hint="Password"
                 android:inputType="numberPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -77,37 +69,12 @@
     <TextView
         android:id="@+id/tvAccount"
         android:text="CREATE AN ACCOUNT"
-        android:layout_gravity="right"
-        android:layout_marginRight="80dp"
+        android:layout_gravity="center"
         android:textSize="12dp"
         android:textStyle="bold"
         android:textColor="#3300CC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:text="Connect With Other Ways"
-        android:gravity="center"
-        android:layout_marginBottom="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/btnFacebook"
-            android:background="#3333FF"
-            android:text="Facebook"
-            android:layout_marginLeft="60dp"
-            android:layout_width="130dp"
-            android:layout_height="50dp"/>
-        <Button
-            android:id="@+id/btnGoogle"
-            android:background="#3366FF"
-            android:text="Google"
-            android:layout_marginLeft="20dp"
-            android:layout_width="130dp"
-            android:layout_height="50dp"/>
-    </LinearLayout>
+
 
 </LinearLayout>

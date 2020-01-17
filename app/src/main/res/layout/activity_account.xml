@@ -22,47 +22,25 @@
         android:id="@+id/btnAccount"
         android:text="CREATE AN ACCOUNT"
         android:textSize="25dp"
-        android:background="@color/colorOrange"
+        android:background="@color/colorGrey"
         android:textColor="#ffffff"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btnLog"
         android:text="LOGIN"
         android:textSize="25dp"
-        android:background="@color/colorWhite"
+        android:background="@color/colorGrey"
         android:textColor="#FFA500"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Connect With Other Ways"
-        android:gravity="center"
-        android:layout_marginBottom="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:background="#3333FF"
-            android:text="Facebook"
-            android:layout_marginLeft="60dp"
-            android:layout_width="130dp"
-            android:layout_height="50dp"/>
-        <Button
-            android:background="#3366FF"
-            android:text="Google"
-            android:layout_marginLeft="20dp"
-            android:layout_width="130dp"
-            android:layout_height="50dp"/>
-    </LinearLayout>
 
 
 
